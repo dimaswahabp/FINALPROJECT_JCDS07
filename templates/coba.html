@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script language="javascript" type="text/javascript">
+    function dynamicdropdown(listindex)
+    {
+        switch (listindex)
+        {
+        case "uber" :
+            document.getElementById("status").options[0]=new Option("uber type..","");
+            document.getElementById("status").options[1]=new Option("Black","black");
+            document.getElementById("status").options[2]=new Option("UberX","uberx");
+            document.getElementById("status").options[3]=new Option("Uberpool","uberpool");
+            break;
+        case "lyft" :
+            document.getElementById("status").options[0]=new Option("lyft type..","");
+            document.getElementById("status").options[1]=new Option("Lyft","lyft");
+            document.getElementById("status").options[2]=new Option("Shared","shared");
+            document.getElementById("status").options[3]=new Option("Lux Black","luxblack");
+            break;
+        }
+        return true;
+    }
+    function coba(listkota)
+    {
+        switch (listkota)
+        {
+        case "solo" :
+            document.getElementById("stasiun").options[0]=new Option("stasiun Solo..","");
+            document.getElementById("stasiun").options[1]=new Option("Jebres","jbs");
+            document.getElementById("stasiun").options[2]=new Option("Balapan","blp");
+            document.getElementById("stasiun").options[3]=new Option("Purwosari","pws");
+            break;
+        case "jogja" :
+            document.getElementById("stasiun").options[0]=new Option("stasiun Jogja..","");
+            document.getElementById("stasiun").options[1]=new Option("Maguwo","mgw");
+            document.getElementById("stasiun").options[2]=new Option("Lempuyangan","lpn");
+            document.getElementById("stasiun").options[3]=new Option("Yogyakarta","yk");
+            break;
+        }
+        return true;
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-row" style="width: 500px">
+        <div class="form-group col-md-6" style="width: 120px" required="required">
+          <label for="cab">Cab Type :</label>
+          <select id="source" name="cab" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+          <option value="">cab type..</option>
+          <option value="uber">Uber</option>
+          <option value="lyft">Lyft</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6" style="width: 120px" required="required">
+          <label for="name">Cab Name :</label>
+          <script type="text/javascript" language="JavaScript">
+          document.write('<select name="name" id="status"><option value="">cab name..</option></select>')
+          </script>
+        </div>
+      </div>
+    <div class="form-row" style="width: 500px">
+        <div class="form-group col-md-6" style="width: 120px" required="required">
+        <label for="city">Kota :</label>
+        <select id="kota" name="city" onchange="javascript: coba(this.options[this.selectedIndex].value);">
+        <option value="">nama kota..</option>
+        <option value="solo">Solo</option>
+        <option value="jogja">Jogja</option>
+        </select>
+        </div>
+        <div class="form-group col-md-6" style="width: 120px" required="required">
+        <label for="stasiun">Nama Stasiun :</label>
+        <script type="text/javascript" language="JavaScript">
+        document.write('<select name="stasiun" id="stasiun"><option value="">nama stasiun..</option></select>')
+        </script>
+        </div>
+    </div>
+</body>
+</html>

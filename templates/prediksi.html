@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script language="javascript" type="text/javascript">
+  function dynamicdropdown(listindex)
+  {
+      switch (listindex)
+      {
+      case "uber" :
+          document.getElementById("status").options[0]=new Option("uber type..","");
+          document.getElementById("status").options[1]=new Option("Black","black");
+          document.getElementById("status").options[2]=new Option("UberX","uberx");
+          document.getElementById("status").options[3]=new Option("Uberpool","uberpool");
+          document.getElementById("status").options[4]=new Option("Black SUV","blacksuv");
+          document.getElementById("status").options[5]=new Option("UberXL","uberxl");
+          document.getElementById("status").options[6]=new Option("WAV","wav");
+          break;
+      case "lyft" :
+          document.getElementById("status").options[0]=new Option("lyft type..","");
+          document.getElementById("status").options[1]=new Option("Lyft","lyft");
+          document.getElementById("status").options[2]=new Option("Shared","shared");
+          document.getElementById("status").options[3]=new Option("Lux Black","luxblack");
+          document.getElementById("status").options[4]=new Option("Lyft XL","lyftxl");
+          document.getElementById("status").options[5]=new Option("Lux Black XL","luxblackxl");
+          document.getElementById("status").options[6]=new Option("Lux","lux");
+          break;
+      }
+      return true;
+  }
+  function dynamicPickpoint(listcity)
+  {
+    switch (listcity)
+      {
+      case "bb" :
+          document.getElementById("tujuan").options[0]=new Option("Back Bay to..","");
+          document.getElementById("tujuan").options[1]=new Option("Boston University","bu");
+          document.getElementById("tujuan").options[2]=new Option("Northeastern University","nu");
+          document.getElementById("tujuan").options[3]=new Option("Fenway","fw");
+          document.getElementById("tujuan").options[4]=new Option("South Station","ss");
+          document.getElementById("tujuan").options[5]=new Option("North End","ne");
+          break;
+      case "bh" :
+          document.getElementById("tujuan").options[0]=new Option("Beacon to..","");
+          document.getElementById("tujuan").options[1]=new Option("Boston University","bu");
+          document.getElementById("tujuan").options[2]=new Option("South Station","ss");
+          document.getElementById("tujuan").options[3]=new Option("Fenway","fw");
+          document.getElementById("tujuan").options[4]=new Option("Northeastern University","nu");
+          break;
+      case "bu" :
+          document.getElementById("tujuan").options[0]=new Option("Boston to..","");
+          document.getElementById("tujuan").options[1]=new Option("Theatre District","td");
+          document.getElementById("tujuan").options[2]=new Option("West End","we");
+          document.getElementById("tujuan").options[3]=new Option("Financial District","fd");
+          break;
+      case "fw" :
+          document.getElementById("tujuan").options[0]=new Option("Fenway to..","");
+          document.getElementById("tujuan").options[1]=new Option("Theatre District","td");
+          document.getElementById("tujuan").options[2]=new Option("West End","we");
+          document.getElementById("tujuan").options[3]=new Option("Financial District","fd");
+          break;
+      case "fd" :
+          document.getElementById("tujuan").options[0]=new Option("FinDis to..","");
+          document.getElementById("tujuan").options[1]=new Option("Northeastern University","nu");
+          break;
+      case "hs" :
+          document.getElementById("tujuan").options[0]=new Option("Hay to..","");
+          document.getElementById("tujuan").options[1]=new Option("Financial District","fd");
+          document.getElementById("tujuan").options[2]=new Option("Beacon Hill","bh");
+          document.getElementById("tujuan").options[3]=new Option("Back Bay","bb");
+          document.getElementById("tujuan").options[4]=new Option("North Station","ns");
+          document.getElementById("tujuan").options[5]=new Option("West End","we");
+          document.getElementById("tujuan").options[6]=new Option("Theatre District","td");
+          break;
+      case "ne" :
+          document.getElementById("tujuan").options[0]=new Option("NE to..","");
+          document.getElementById("tujuan").options[1]=new Option("Theatre District","td");
+          document.getElementById("tujuan").options[2]=new Option("Beacon Hill","bh");
+          document.getElementById("tujuan").options[3]=new Option("West End","we");
+          document.getElementById("tujuan").options[4]=new Option("Financial District","fd");
+          document.getElementById("tujuan").options[5]=new Option("North Station","ns");
+          break;
+      case "ns" :
+          document.getElementById("tujuan").options[0]=new Option("N St to..","");
+          document.getElementById("tujuan").options[1]=new Option("Boston University","bu");
+          document.getElementById("tujuan").options[2]=new Option("South Station","ss");
+          document.getElementById("tujuan").options[3]=new Option("Northeastern University","nu");
+          document.getElementById("tujuan").options[4]=new Option("Fenway","fw");
+          break;
+      case "ss" :
+          document.getElementById("tujuan").options[0]=new Option("S St to..","");
+          document.getElementById("tujuan").options[1]=new Option("Theatre District","td");
+          document.getElementById("tujuan").options[2]=new Option("West End","we");
+          document.getElementById("tujuan").options[3]=new Option("Financial District","fd");
+          break;
+      case "td" :
+          document.getElementById("tujuan").options[0]=new Option("Theatre to..","");
+          document.getElementById("tujuan").options[1]=new Option("Northeastern University","nu");
+          break;
+      case "we" :
+          document.getElementById("tujuan").options[0]=new Option("WE to..","");
+          document.getElementById("tujuan").options[1]=new Option("Northeastern University","nu");
+          break;
+      }
+      return true;
+  }
+  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>UL Booking Apps</title>
+    <style>
+      body {
+          background-image: url("http://localhost:8000/storage/bg.jpg");
+          background-size: 1280px 800px
+          }
+  </style>
+</head>
+<style>
+h1{
+    color: #FF00BF;
+    font-weight: bold;
+    font-family: 'Impact';
+    font-size: 70px;
+}
+h2{
+    color: Black(165, 148, 165);
+    font-weight: bold;
+    font-family: 'Impact';
+    font-size: 40px;
+}
+h3{
+    color: black;
+    font-family: 'Impact';
+    font-size: 30px;
+}
+img{
+    margin-top:20px;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/">Beranda<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/stats">Statistik</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<center>
+    <br>
+    <h1>U B E R L Y F T</h1>
+    <h3>BOOKING APPS</h3>
+    <br>
+    <form method="POST" action="http://localhost:8000/result">
+        <br>
+            <!-- TANGGAL -->
+            <div class="form-row" style="width: 700px">
+              <div class="form-group col-md-4" style="width: 120px" required="required">
+                  <label for="book">Date :</label>
+                  <input type="date" name="book">
+              </div>
+              <!-- JENIS TAKSI -->
+              <div class="form-group col-md-4" style="width: 120px" required="required">
+                <label for="cab">Cab Type :</label>
+                <select id="source" name="cab" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+                <option value="">cab type..</option>
+                <option value="uber">Uber</option>
+                <option value="lyft">Lyft</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 120px" required="required">
+                <label for="name">Cab Name :</label>
+                <script type="text/javascript" language="JavaScript">
+                document.write('<select name="name" id="status"><option value="">cab name..</option></select>')
+                </script>
+              </div>
+            </div>
+            <!-- JEMPUT ANTAR -->
+            <div class="form-row" style="width: 700px">
+              <div class="form-group col-md-4" style="width: 200px" required="required">
+                <label for="awal">Pick point :</label>
+                <select id="awal" name="awal" onchange="javascript: dynamicPickpoint(this.options[this.selectedIndex].value);">
+                <option value="">pick point..</option>
+                <option value="bb">Back Bay</option>
+                <option value="bh">Beacon Hill</option>
+                <option value="bu">Boston University</option>
+                <option value="fw">Fenway</option>
+                <option value="fd">Financial District</option>
+                <option value="hs">Haymarket Square</option>
+                <option value="ne">North End</option>
+                <option value="ns">North Station</option>
+                <option value="ss">South Station</option>
+                <option value="td">Theatre District</option>
+                <option value="we">West End</option>
+                </select>
+              </div>
+              <div class="form-group col-md-4" style="width: 200px" required="required">
+                <label for="tujuan">Destination :</label>
+                <script type="text/javascript" language="JavaScript">
+                document.write('<select name="tujuan" id="tujuan"><option value=""destination..</option></select>')
+                </script>
+              </div>
+              <div class="form-group col-md-4" style="width: 200px" required="required">
+                  <label for="jam">Time :</label>
+                  <input type="time" name="jam">
+              </div>
+            </div>
+            
+        <br>
+        <br>
+        <button type="submit" style="background-color:black; color: #FF00BF; width: 400px; height: 50px"
+        class="btn btn-info">PREDICT PRICE!</button>
+    </form>
+</center>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

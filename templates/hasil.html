@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<style>
+h1{
+    color: black;
+    font-weight: bold;
+    font-family: 'Arial';
+    font-size: 53px;
+}
+.p1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.p2{
+    font-size: 50px;
+    text-align: center;
+    font-weight:bold;
+    color: black
+}
+.container{
+        width: 350px;
+        text-align: justify;
+        font-size: 15px;
+}
+img{
+    margin-top:20px;
+}
+</style>
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #FF00BF;
+  }
+  </style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://localhost:8000/stats">Statistik</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+<center>
+    <br>
+    <br>
+    <div>
+      <h1>
+        Price For Booking:
+      </h1>
+    </div>
+    <hr>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Cab Type</th>
+        <th>Cab Name</th>
+        <th>Pick Point</th>
+        <th>Destination</th>
+        <th>Distance</th>
+      </tr>
+      <tr>
+        <td> {{day}} </td>
+        <td> {{date}} </td>
+        <td> {{jam}} </td>
+        <td> {{cab}} </td>
+        <td> {{nem}} </td>
+        <td> {{jemput}} </td>
+        <td> {{antar}} </td>
+        <td> {{jarak}} km</td>
+      </tr>
+    </table>
+    <hr>
+    <br>
+    <div class="p1">
+        taraaaa..
+    </div>
+    <div class="p2">
+        <label for="result">USD {{result}}</label></div>
+    <hr>
+    <a href="/" target="_self" >
+        <button style="background-color: #FF00BF; color: black; width: 400px; height: 50px" class="btn btn-light">
+            Predict Again
+        </button>    
+      </a>
+</center>
+</body>
+</html>
